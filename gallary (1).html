@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    
+    <script src="https://kit.fontawesome.com/ff82b7102a.js"></script>‏
+    <script src="gallary.js"></script>
+    <script src="Image.js"></script>
+    <link href="gallary.css" rel="stylesheet" />
+</head>
+<body>
+  
+  <div class="top">
+    <h1>My Gallary</h1>
+    <input type="text" id="txtSearch" onkeyup="checkKey(event)" />
+
+    <button id="searchBtn" onclick="display_photos()"><i class="fas fa-search"></i></button> 
+  
+    <button id="favorites_btn" onclick="display_favorite_photos()"><i class="fas fa-heart"></i></button>
+
+   
+    <button id="clear_favorites_btn" onclick="clear_favorite_photos()" class="hide">clear favorite</button>
+
+   
+
+  </div>
+        
+  <div id="image_gallery"> </div>
+  
+  <div id="expand_img" class="hide">
+    <button onclick="reduce_img()"><i class="fas fa-compress"></i></button>
+    <img id ="expand_src" src="#" />
+  </div>
+
+
+<!--  <div id="add_to_favorites" class = "hide">
+    <button onclick=""
+  </div>
+-->
+</body>
+</html>
